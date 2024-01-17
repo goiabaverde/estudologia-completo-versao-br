@@ -7,3 +7,4 @@ SQLAlchemy==1.4.45
 sqlparse==0.4.3
 django-extensions==3.2.3
 python-decouple==3.8
+gunicorn==21.2.0
