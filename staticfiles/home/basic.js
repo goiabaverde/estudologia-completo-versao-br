@@ -2,7 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", ()=>{
 // On load the page will check the localStorage to show the correct theme
-    console.log('carregou')
     var theme = localStorage.getItem('theme')
     console.log(theme)
     if(theme == 'dark'){
