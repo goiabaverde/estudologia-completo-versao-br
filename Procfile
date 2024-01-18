@@ -1,1 +1,1 @@
-web: gunicorn estudologia:app
+web: gunicorn estudologia.wsgi --log-file -
