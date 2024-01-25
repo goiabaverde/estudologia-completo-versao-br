@@ -40,7 +40,7 @@ function pascal(){
             const td = document.createElement('td')
             let value = combination(i,j)
             td.textContent = value
-            td.setAttribute('title', `C(${j},${i})`)
+            td.setAttribute('title', `C(${i},${j})`)
             row.append(td)
         }
         // Check if is the last row to do the output of the number of the colunms

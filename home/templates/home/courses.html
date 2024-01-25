@@ -14,7 +14,7 @@ async function updateCourse(){
   document.querySelector(".my_msg_div").innerHTML = ''
   document.querySelector(".avaialble_msg_div").innerHTML = ''
   if( await cond != 'true'){
-    window.location.href = 'http://127.0.0.1:8000/login'
+    window.location.href = 'http://127.0.0.1:8000/home/login'
     window.alert('Para adicionar um curso para a sua lista é necessário que esteja logado!')
   }else{
     // do the fetch to change the inventory

@@ -153,8 +153,6 @@ def edit(request, id):
             return render(request, 'apps/pascal.html', {'row' : element.var1})
         if(type == 'bi'):
             return render(request, 'apps/binomial.html', {'coef' : element.var1 })
-        if(type == 'fc'):
-            return render(request, 'apps/function.html', {'function' : element.var1 })
     else:
         return render(request, 'apps/error.html', {'msg' : 'Você precisa estar logado para editar as calculadoras.'})
 

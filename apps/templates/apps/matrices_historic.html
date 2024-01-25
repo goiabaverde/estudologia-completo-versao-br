@@ -36,18 +36,18 @@ function multiply_matrices(a, b){
    </thead>
       <tbody>
           {% for item in itens %}
-        <tr id="id_{{ item.id }}" >
-          <th>{{item.date}}</th>
-          <td>{{item.number_rows_a}}</td>
-          <td>{{item.number_colunms_a}}</td>
-          <td>{{item.matrix_a}}</td>
-          <td>{{item.number_rows_b}}</td>
-          <td>{{item.number_colunms_b}}</td>
-          <td>{{item.matrix_b}}</td>
-          <td><i  onclick="edit_matrix('{{ item.id }}')" class="fa-solid fa-pencil"></i></td>
-          <td><i  onclick="remove_matrix('{{ item.id }}')"  class="fa-solid fa-trash"></i></td>
-        </tr>
-      </tbody>
+          <tr id="id_{{ item.id }}">
+            <th>{{item.date}}</th>
+            <td>{{item.number_rows_a}}</td>
+            <td>{{item.number_colunms_a}}</td>
+            <td>{{item.matrix_a}}</td>
+            <td>{{item.number_rows_b}}</td>
+            <td>{{item.number_colunms_b}}</td>
+            <td>{{item.matrix_b}}</td>
+            <td><i  onclick="edit_matrix('{{ item.id }}')" class="fa-solid fa-pencil"></i></td>
+            <td><i  onclick="remove_matrix('{{ item.id }}')"  class="fa-solid fa-trash"></i></td>
+          </tr>
+      
          {% endfor %}
-         <div class="cont">TEST</div>
+      </tbody>
 {% endblock %}
